@@ -1,0 +1,9 @@
+.add-cart{
+    background: #eee;
+    color: #000;
+    display: block;
+    padding: 0.5rem;
+    &:active{
+        background: #ccc;
+    }
+}

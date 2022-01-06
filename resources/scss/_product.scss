@@ -1,0 +1,40 @@
+.product-item{
+    margin-bottom: 0.5rem;
+    .add-cart{
+        width: 100%;
+    }
+
+    .overlay{
+        background: rgba(#000, 0.6);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        padding: 0.5rem;
+        display: none;
+    }
+}
+
+
+.product-item:hover{
+    .overlay{
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.product-cover{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.product-name{
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.product-price{
+    font-weight: bold;
+    text-align: center;
+}
