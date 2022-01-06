@@ -19,3 +19,8 @@ Route::get('/', function (\Illuminate\Http\Request $request) {
         'sort' => $request->query('sort'),
     ]);
 });
+
+Route::group(['prefix' => 'cart'], function () {
+    Route::post('/', [\App\Http\Controllers\CartController::class, 'addCart']);
+    Route::delete('/{pid}', [\App\Http\Controllers\CartController::class, 'remove']);
+});

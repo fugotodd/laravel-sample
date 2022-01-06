@@ -9,18 +9,20 @@ class ProductListItem extends Component
     public $name;
     public $cover;
     public $price;
+    public $pid;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($name, $cover, $price)
+    public function __construct($name, $cover, $price, $pid)
     {
         //
         $this->name = $name;
         $this->cover = $cover;
         $this->price = $price;
+        $this->pid = $pid;
     }
 
     /**

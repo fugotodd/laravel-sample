@@ -17,7 +17,7 @@
     <div class="row mt-3 mb-3">
         @foreach($list as $product)
             <div class="col-3">
-                <x-product-list-item :name="$product->title" :cover="$product->cover" :price="$product->price" />
+                <x-product-list-item :name="$product->title" :cover="$product->cover" :price="$product->price" :pid="$product->id" />
             </div>
         @endforeach
         @if($list->isEmpty())

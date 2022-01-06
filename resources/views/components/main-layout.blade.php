@@ -13,6 +13,7 @@
 <body>
     {{$slot}}
 
+    <script src="{{mix('assets/js/app.js')}}"></script>
     {{$exJs ?? ''}}
 </body>
 </html>
